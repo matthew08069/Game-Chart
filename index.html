@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameChart Home</title>
+
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/index.js"></script>
+</head>
+<body>
+
+
+
+
+<main>
+    <div id = leftContainer>
+        <div>
+            <form method="GET" action="search.html">
+                <input type="text" id="search" class="menuButton" name="game" placeholder="Search">
+            </form>
+        </div>
+        <div>
+            <input type="button" id = "table" class="menuButton" value="Tables" onclick="location.href='tables.html'">
+        </div>
+        <div>
+            <input type="button" id = "chart" class="menuButton" value="Charts" onclick="location.href='charts.html'">
+        </div>
+        <div>
+            <input type="button" id = "about" class="menuButton" value="About" onclick="location.href='about.html'">
+        </div>
+    </div>
+
+    <div id = "rightContainer">
+        <div id="game-chart-title">
+            <h1>GameChart</h1>
+        </div>
+        <div id="main-title">
+            <hr id="hr-line">
+            <h2>A Game Data Visualization Tool</h2>
+            <a id="gameLink" href="game.html?game=27464">
+                <img id = "scroller" src="../images/mario.jpeg">
+            </a>
+        </div>
+    </div>
+</main>
+
+
+</body>
+<script src="../scripts/index.js"></script>
+</html>
