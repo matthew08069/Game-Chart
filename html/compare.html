@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link href="../css/compare.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../scripts/compare.js"></script>
+    </head>
+    <body>
+
+    <header>
+        <nav>
+            <ul id = "links">
+                <li><a href="index.html" id = "home" >GameChart</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="charts.html">Charts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <form method="GET" action="search.html">
+                        <input type="text" id="search" name="game" placeholder="Search..."><br>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <div id = containerBox>
+                <div id="leftGameContainer">
+                    <div id ="leftGameImage">
+                    </div>
+                    <div id= "leftInfo"></div>
+                </div>
+
+                <div id="compareBox">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div id="rightGameContainer">
+                    <div id ="rightGameImage"></div>
+                    <div id ="rightInfo"></div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

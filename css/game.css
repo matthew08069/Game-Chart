@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+html, body {
+    /* the following removes the extra empty space present on top of the page and on the sides*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+}
+
+#listings {
+    justify-content: center;
+    text-align: center;
+}
+p{
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+    width: 100%;
+}
+li {float: left;}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 14px 16px;
+    border-right: solid 2px;
+}
+li a:hover {background-color: lightseagreen;}
+li a:link {text-decoration: none;}
+li a:visited {text-decoration: none;}
+
+#search {
+    position: relative;
+    left: 250px;
+    width: 400px;
+    height: 35px;
+    font-size: 30px;
+    background-color: lightgrey;
+    text-align: left;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    vertical-align: middle;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.col {
+    float: left;
+    width: 50%;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+.box{
+    width: 1250px;
+    height: 300px;
+    position: relative;
+    border: 5px solid black;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: lightgray;
+}
+.graph {
+    margin-left: 250px; margin-right: 250px; margin-top: 50px
+}
+
+#listingThumbnailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+#thumbnail {
+    border-radius: 25px;
+    padding: 15px;
+}

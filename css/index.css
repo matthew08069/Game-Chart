@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+html, body {
+    /* the following removes the extra empty space present on top of the page and on the sides*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+}
+
+#leftContainer{
+    margin-top: 12%;
+    float: left;
+    /*border: solid blueviolet 3px;*/
+    width: 49.5%;
+    height: 100%;
+}
+
+#rightContainer{
+
+    float: right;
+    /*border: solid yellow 3px;*/
+    width: 49.5%;
+    height: 90%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body {
+    letter-spacing: -2px;
+}
+
+h1 {
+    /*text-align: right;*/
+    font-size: 80px;
+    -webkit-text-stroke: 3px black;
+    -webkit-text-fill-color: white;
+    margin: 20px;
+}
+
+
+h2 {
+    position: relative;
+    right: 125px;
+    text-align: right;
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px black;
+    -webkit-text-fill-color: white;
+}
+
+body {
+    background-color: grey;
+    background: url("../images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menuButton {
+    height: 50px;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    border: 2px solid #080808;
+    border-style: inset;
+    font-size: 35px;
+    font-weight: bolder;
+    background-color: lightgrey;
+    text-align: center;
+    color: black;
+    margin-left: -25px; /* pushing the mnu to the left */
+}
+
+
+
+#hr-line {
+    height: 3px;
+    border: 0;
+    color: #333;
+    background-color: white;
+    width: 80%;
+}
+
+
+#search {
+    width: 75%;
+}
+
+#table {
+    width: 65%;
+    cursor: pointer;
+}
+#chart {
+    width: 55%;
+    cursor: pointer;
+}
+#about {
+    width: 45%;
+    cursor: pointer;
+}
+
+#scroller {
+    border-radius: 30px;
+    /*margin-left: 150px;*/
+    margin-top: 10px;
+    /*width: 200px; /* width of container */
+    /*height: 300px; /* height of container */
+    object-fit: cover;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Set</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <script src="../scripts/table.js"></script>
+    <link href="../css/tables.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul id = "links">
+            <li><a href="index.html" id = "home" >GameChart</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="charts.html">Charts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <form method="GET" action="search.html">
+                    <input type="text" id="search" name="game" placeholder="Search..."><br>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="compareBtnDiv">
+    <button id="compareBtn">Compare</button>
+</div>
+<div id="myGrid" class="ag-theme-alpine"></div>
+<main>
+
+</main>
+
+</body>
+</html>

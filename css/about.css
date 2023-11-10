@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+html, body {
+    /* the following removes the extra empty space present on top of the page and on the sides*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+    width: 100%;
+}
+li {float: left;}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 14px 16px;
+    border-right: solid 2px;
+}
+li a:hover {background-color: lightseagreen;}
+li a:link {text-decoration: none;}
+li a:visited {text-decoration: none;}
+
+#search {
+    position: relative;
+    left: 250px;
+    width: 400px;
+    height: 35px;
+    font-size: 30px;
+    background-color: lightgrey;
+    text-align: left;
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+
+#mainContainer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#leftContainer {
+    width: 49.5%;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightContainer {
+    width: 49.5%;
+    float: right;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+ .box{
+     width: 500px;
+     height: 200px;
+     position: relative;
+     border: 5px solid black;
+     text-align: center;
+     margin: auto;
+     padding: 20px;
+     border-radius: 25px;
+     background-color: lightgrey;
+ }
+
+.Why {
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border: 5px solid black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+.Who {
+    margin: auto;
+    margin-top: 70px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border: 5px solid black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+.Source {
+    margin: auto;
+    margin-top: 70px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border: 5px solid black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+.freq {
+    text-align: center;
+    margin-bottom: 40px;
+}

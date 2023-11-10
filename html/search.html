@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link href="../css/search.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="../scripts/search.js"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul id = "links">
+            <li><a href="index.html" id = "home" >GameChart</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="charts.html">Charts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <form method="GET" action="search.html">
+                    <input type="text" id="search" name="game" placeholder="Search..."><br>
+                </form>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<br>
+
+<input type="button" id = "filter" value="Filter">
+
+<div id="filterModel" class="filterModel">
+
+    <div class="filter-content">
+        <span class="close">&times;</span>
+        <h3>Filter By...</h3>
+
+        <!--<form action=""> -->
+        <div>
+            <div id="genreDiv">
+                <input type="checkbox" id="genre" name="genre" value="genre">
+                <label for="genre" class="genreList">Genre</label><br><br>
+                <select name="genreList" multiple  id= "genreList" disabled>
+                    <option value="" disabled selected hidden>Select Genre</option>
+                    <option value="action-adventure">Action-Adventure</option>
+                    <option value="action">Action</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="misc">Misc</option>
+                    <option value="music">Music</option>
+                    <option value="platform">Platform</option>
+                    <option value="puzzle">Puzzle</option>
+                    <option value="racing">Racing</option>
+                    <option value="role-playing">Role-Playing</option>
+                    <option value="shooter">Shooter</option>
+                    <option value="simulation">Simulation</option>
+                    <option value="sports">Sports</option>
+                    <option value="strategy">Strategy</option>
+                </select>
+            </div>
+            <div id = "yearDiv">
+                <input type="checkbox" id="year" name="year" value="year">
+                <label for="year">Year Released</label><br><br>
+                <input type="text" id = "minY" name = "minY" placeholder = "min" maxlength="4" class="yearsM" disabled>
+                <!--p>-</p-->
+                <input type="text" id = "maxY" name = "maxY" placeholder = "max" maxlength="4" class="yearsM" disabled>
+            </div>
+
+            <div id = "platDiv">
+                <input type="checkbox" id="platform" name="platform" value="platform">
+                <label for="platform">Platform</label><br><br>
+                    <select name="platList" id = "platList" multiple disabled>
+                        <option value="" disabled selected hidden>Select Platform</option>
+                        <option value="2600">2600</option>
+                        <option value="3DS">3DS</option>
+                        <option value="DS">DS</option>
+                        <option value="GBA">GBA</option>
+                        <option value="GC">GC</option>
+                        <option value="N64">N64</option>
+                        <option value="NES">NES</option>
+                        <option value="NS">NS</option>
+                        <option value="PC">PC</option>
+                        <option value="PS">PS</option>
+                        <option value="PS2">PS2</option>
+                        <option value="PS3">PS3</option>
+                        <option value="PS4">PS4</option>
+                        <option value="PSP">PSP</option>
+                        <option value="PSV">PSV</option>
+                        <option value="Wii">Wii</option>
+                        <option value="WiiU">WiiU</option>
+                        <option value="X360">X360</option>
+                        <option value="XB">XB</option>
+                        <option value="XOne">XOne</option>
+                    </select>
+            </div>
+
+            <div id = "pubDiv">
+                <input type="checkbox" id="publisher" name="publisher" value="publisher">
+                <label for="publisher">Publisher</label><br><br>
+                <input type="text" id = "pubT" name = "pubT" placeholder = "Enter Publisher here" disabled>
+            </div>
+
+            <div id = "devDiv">
+                <input type="checkbox" id="developer" name="developer" value="developer">
+                <label for="developer">Developer</label><br><br>
+                <input type="text" id = "devT" name = "devT" placeholder = "Enter Developer here" disabled>
+            </div>
+
+            <div id="apply">
+                <button id="filterApplyBtn">Apply</button>
+                <!--<input id = "apply" type="submit" value="Apply"> -->
+            </div>
+
+        </div>
+        <!--</form>-->
+
+    </div>
+
+</div>
+
+<br>
+<div id="infoHeader"></div>
+<div id="listings"></div>
+</body>
+</html>
